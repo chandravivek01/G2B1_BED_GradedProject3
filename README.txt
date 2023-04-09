@@ -9,3 +9,9 @@ Maven Dependencies:- Starter-Web, Spring-Data-JPA, Spring-Test, Devtools, MySQL,
 Plugins for the Frontend:- JQuery, FontAwesome, Rich Text Editor
 
 
+Running the project:-  
+1. Open the file TicketTrackerApplication.java (path: /src/main/java/com/g2b1/ticketTracker/TicketTrackerApplication.java).
+2. run  the above selected file as Java Application.
+3. Go to any web-browser and hit the URL as 'localhost:8080/' (default server port is 8080).
+
+
