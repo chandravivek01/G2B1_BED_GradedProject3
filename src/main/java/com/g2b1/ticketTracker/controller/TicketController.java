@@ -36,7 +36,10 @@ public class TicketController {
 	// SEARCH a ticket by its 'title' and 'description'
 	@GetMapping("/search")
 	public String searchTickets(@RequestParam("query") String query, Model model) {
-
+		
+		if (query.trim().isEmpty())
+			return "redirect:/admin/tickets";
+			
 		List<Ticket> searchedTickets = ticketService.searchTickets(query);
 		List<Ticket> searchedTicketsWithoutTimestamp = ticketService.removeTimestamp(searchedTickets);
 		model.addAttribute("tickets", searchedTicketsWithoutTimestamp);
